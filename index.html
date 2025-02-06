@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #486d66;
+            color: #f9f7f7;
+            padding: 15px;
+            display: flex;
+            align-items: left;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ff69b4;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .header-title {
+            font-size: 26px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-left: -850px;
+            margin-top: 10px;
+            flex-grow: 1;
+            animation: bounceIn 1s ease-out;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: translateY(-30px);
+            }
+            50% {
+                transform: translateY(15px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .github-logo {
+            width: 40px;
+            height: 40px;
+            margin-left: -200px;
+            transition: transform 0.3s ease;
+        }
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #f9f7f7;
+            text-transform: uppercase;
+            margin-left: -30px;
+            margin-top: -40px;
+            flex-grow: 1;
+            animation: bounceIn 1s ease-out;
+        }
+
+        .github-logo:hover {
+            transform: scale(1.2);
+        }
+
+        .main-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 40px;
+            color: #edb452;
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    .restaurant-img {
+    width: 150px;
+    height: 150px;
+    margin: 25px auto;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #87ceeb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s ease-out;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.restaurant-img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            background-color: #487a78;
+            color: #fffbfb;
+            padding: 25px;
+            width: 100%;
+            font-size: 14px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 8%; /* Ensures footer is at the bottom */
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="main.jpeg" alt="Logo" class="logo">
+        <div class="header-title">Udaya Restaurant</div>
+        <a href="https://github.com/uday957/restuarant" target="_blank">
+            <img src="git.jpeg" alt="GitHub" class="github-logo">
+            <div class="title">Github</div>
+        </a>
+    </header>
+    <main>
+        <div class="main-title">Restaurant Management System</div>
+        <a href="https://cpss.haakwin.in" target="_blank">
+            <img src="log.jpeg" alt="Restaurant Image" class="restaurant-img">
+        </a>
+        <div class="main-title">Enjoy Our Delicious Meal..</div>
+    </main>
+    <footer>
+        &copy;  2025 Udaya Restaurant – Taste the Legacy, Reserved for You. 🍷🍽️
+        
+    </footer>
+</body>
+</html>
